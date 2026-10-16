@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary my-5">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+       <!-- 
+        margin 
+            m  0....5
+            mt 0....5
+            mb 0....5   
+            ms 0....5   margin start
+            me 0....5   margin end
+        mx - start , end , left & right
+        my - top and bottom
+
+         padding 
+            p  0....5
+            pt 0....5
+            pb 0....5   
+            ps 0....5   margin start
+            pe 0....5   margin end
+        px - start , end , left & right
+        py - top and bottom
+
+        primary
+        secondary
+        warning
+        danger
+        success
+        info
+        dark
+        light 
+        white
+
+        border  
+            border-width
+            border-color
+            border-opacity 25,50,75,100
+
+            border-radius 
+                rounded start,end,top,bottom
+                rounded-pill
+                rounded-circle
+
+            background 
+                bg-color
+
+            typography
+                h1-h6
+                display 1...6
+                
+                lead
+                small
+                mark
+
+                font-size 
+                    fs 1..5
+                font-weight
+                    fw - light , medium , bold
+                font-style 
+                    font-italic 
+
+                text-alignment
+                    text-center ,start ,end
+                text-decoration 
+                    underline
+                text-transformation
+                    text-lowercase
+                    text-uppercase
+                    text-capitalize
+                text-color
+                text-color-opacity
+
+                button
+                btn
+                btn-color
+                btn-outline-color
+                btn-sm , btn-lg
+
+                
+                container -80%
+                container-fluid - fullsize 
+                
+                
+                row,col
+                col-1 , col-12
+
+                
+
+
+        -->
+
+    <!-- <center> -->
+        
+<!-- 
+            <div class="container border bg-light text-center  border-info border-5 rounded-bottom p-5">
+                 <h1 class="text-dark">BOOTSTRAP</h1>
+                <p class="text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam perspiciatis </p>
+                <button class="btn btn-outline-dark btn-lg">start</button>
+                <button class="btn btn-outline-danger ">start</button>
+                <button class="btn btn-danger btn-outline-warning btn-sm">start</button>
+            </div>
+
+             <div class="container border my-5 bg-light text-center  border-info border-5 rounded-bottom p-5">
+                 <h1 class="text-dark">BOOTSTRAP</h1>
+                <p class="text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam perspiciatis </p>
+
+                <button class="btn btn-outline-dark btn-lg">start</button>
+                <button class="btn btn-outline-danger ">start</button>
+                <button class="btn btn-danger btn-outline-warning btn-sm">start</button>
+            </div> -->
+
+            <!-- <div class="container-fluid my-5">
+                <div class="row border p-3 border-danger">
+                    <div class=" col-6 border border-warning p-4">1</div>
+                    <div class=" col-6 border border-warning p-4">2</div>
+                    <div class=" col-1 border border-warning p-4">3</div>
+                    <div class=" col-1 border border-warning p-4">4</div>
+                    <div class=" col-1 border border-warning p-4">5</div>
+                    <div class=" col-1 border border-warning p-4">6</div>
+                    <div class=" col-1 border border-warning p-4">7</div>
+                    <div class=" col-1 border border-warning p-4">8</div>
+                    <div class=" col-1 border border-warning p-4">9</div>
+                    <div class=" col-1 border border-warning p-4">10</div>
+                    <div class=" col-1 border border-warning p-4">11</div>
+                    <div class=" col-1 border border-warning p-4">12</div>
+                </div>
+            </div> -->
+    
+    <!-- </center> -->
+
+
+    <!-- <div class="container"> -->
+
+        <!-- <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2 col-xxl-1 btn btn btn-primary">primary</div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2 col-xxl-1 btn btn btn-secondary">secondary</div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2 col-xxl-1 btn btn btn-danger">danger</div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2 col-xxl-1 btn btn btn-warning">warning</div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2 col-xxl-1 btn btn btn-success">success</div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2 col-xxl-1 btn btn btn-dark">dark</div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2 col-xxl-1 btn btn btn-light">light</div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2 col-xxl-1 btn btn btn-info">info</div>
+        </div> -->
+
+        <!-- 
+        col-sm-12 
+        col-md-6 
+        col-lg-4
+        col-xl-2
+        col-xxl-1
+        
+        position-sticky top, bottom,start , end
+
+        table
+
+        table
+        table-color
+        table-sm , md
+        table-hover
+        table-striped
+        border
+
+        shadow
+
+        shadow-sm
+        shadow
+        shadow-lg
+           
+
+        -->
+
+
+    </div>
+
+    
+
+    <!-- <div class="col-12 p-5 bg-danger  position-sticky top-50">sticky</div> -->
+
+    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi iure, alias, minima et itaque amet enim harum, ipsa accusamus quae nihil consectetur! Eum tempore distinctio sequi obcaecati quod veritatis iure, deleniti dolores enim eveniet sint provident repudiandae accusamus nulla aliquid. Ut provident temporibus consequuntur tenetur, sequi atque culpa assumenda, excepturi deleniti eligendi sunt mollitia reiciendis ullam dicta laborum quaerat alias, sapiente consequatur veritatis autem praesentium nobis. Sed itaque deserunt, fugiat, aspernatur totam voluptatibus blanditiis distinctio amet adipisci quaerat reiciendis in odio vel eveniet maxime inventore necessitatibus illo aperiam eaque dolor. Rerum est molestias in placeat iusto corporis, distinctio ullam consequatur, non at molestiae tenetur ut eveniet sunt quam! Quo voluptas fugiat, ut quaerat corporis error fugit eaque similique? Dolorem similique quas rem fuga? Ex nemo dolorem fugit quod a animi, tenetur ab similique sunt quaerat quas unde amet minima consequuntur! Sapiente numquam architecto assumenda et corrupti consequatur est quasi dolor animi quos aliquid, odit cum dolores exercitationem fuga amet soluta autem expedita quo atque culpa laudantium? Qui alias assumenda molestias, saepe voluptates recusandae, dolorem facilis quam accusamus harum, nihil dicta aut aliquid magnam pariatur possimus soluta! Totam rem officia magni officiis! A sunt porro est earum enim officia atque distinctio, possimus illum ab nostrum accusamus ad temporibus, eaque sint consequuntur. Quam, sed! Vero qui ducimus distinctio nihil iusto exercitationem a doloremque nesciunt, maxime culpa maiores harum esse doloribus quaerat quidem pariatur cumque, inventore ipsam voluptas quisquam perferendis. Quos aperiam eveniet labore debitis distinctio, accusamus esse exercitationem amet asperiores quae neque reiciendis. Quidem, sed, quae corrupti sit dolor esse dolore veritatis magnam ratione atque soluta maiores qui dicta doloremque laborum inventore architecto, nostrum ipsam pariatur consectetur amet molestiae blanditiis perspiciatis deleniti. Ratione saepe totam quibusdam consequuntur doloremque eaque quaerat velit expedita. Voluptatem id temporibus exercitationem error ratione, nihil alias aut illum harum dicta modi reprehenderit excepturi sequi. Natus corrupti eligendi, doloremque molestiae vel, facere hic soluta, vero alias deserunt tenetur quisquam laudantium eos! Dolor nemo sapiente deleniti! Culpa provident quidem rem facere earum hic ab. Quod deleniti qui quos aut animi repellendus commodi iste exercitationem officiis, pariatur harum optio rem accusantium cumque ea omnis sed, voluptatibus saepe doloremque error aliquam ullam quisquam. Earum, dolorum! Velit assumenda, rerum vero, nisi eaque accusantium, voluptas corporis sapiente hic cumque magnam eius quas dignissimos ab tenetur impedit! Ipsa mollitia quibusdam voluptas quisquam nesciunt tempora corrupti, est non qui, et, consequatur saepe? Aliquam corrupti ex natus minima suscipit, dolore voluptatibus pariatur, tempora esse sit cum? Fugit accusantium quae cupiditate odio nostrum assumenda adipisci dolore quod consectetur provident obcaecati corrupti numquam nobis laborum officiis asperiores inventore voluptatum quis beatae, saepe sed similique porro. Placeat sit accusantium obcaecati aliquam necessitatibus eligendi, quod adipisci facere sapiente quaerat reprehenderit fuga nulla. Inventore, hic quam, eos porro vel quisquam, quos aperiam amet est harum obcaecati nobis similique impedit. Praesentium dolorum iste, saepe tempore ullam placeat quo sed totam quidem, dignissimos laudantium aperiam, voluptas unde dolor commodi autem quaerat voluptate. Recusandae eaque officia expedita incidunt praesentium consequuntur distinctio, mollitia vero repellendus.</p> -->
+
+    <!-- <div class="col-12 p-5 bg-danger  position-fixed top-50">fixed</div> -->
+
+    <!-- <button class="btn btn-primary position-sticky top-0  bottom-50">Pimary</button> -->
+<!-- 
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi iure, alias, minima et itaque amet enim harum, ipsa accusamus quae nihil consectetur! Eum tempore distinctio sequi obcaecati quod veritatis iure, deleniti dolores enim eveniet sint provident repudiandae accusamus nulla aliquid. Ut provident temporibus consequuntur tenetur, sequi atque culpa assumenda, excepturi deleniti eligendi sunt mollitia reiciendis ullam dicta laborum quaerat alias, sapiente consequatur veritatis autem praesentium nobis. Sed itaque deserunt, fugiat, aspernatur totam voluptatibus blanditiis distinctio amet adipisci quaerat reiciendis in odio vel eveniet maxime inventore necessitatibus illo aperiam eaque dolor. Rerum est molestias in placeat iusto corporis, distinctio ullam consequatur, non at molestiae tenetur ut eveniet sunt quam! Quo voluptas fugiat, ut quaerat corporis error fugit eaque similique? Dolorem similique quas rem fuga? Ex nemo dolorem fugit quod a animi, tenetur ab similique sunt quaerat quas unde amet minima consequuntur! Sapiente numquam architecto assumenda et corrupti consequatur est quasi dolor animi quos aliquid, odit cum dolores exercitationem fuga amet soluta autem expedita quo atque culpa laudantium? Qui alias assumenda molestias, saepe voluptates recusandae, dolorem facilis quam accusamus harum, nihil dicta aut aliquid magnam pariatur possimus soluta! Totam rem officia magni officiis! A sunt porro est earum enim officia atque distinctio, possimus illum ab nostrum accusamus ad temporibus, eaque sint consequuntur. Quam, sed! Vero qui ducimus distinctio nihil iusto exercitationem a doloremque nesciunt, maxime culpa maiores harum esse doloribus quaerat quidem pariatur cumque, inventore ipsam voluptas quisquam perferendis. Quos aperiam eveniet labore debitis distinctio, accusamus esse exercitationem amet asperiores quae neque reiciendis. Quidem, sed, quae corrupti sit dolor esse dolore veritatis magnam ratione atque soluta maiores qui dicta doloremque laborum inventore architecto, nostrum ipsam pariatur consectetur amet molestiae blanditiis perspiciatis deleniti. Ratione saepe totam quibusdam consequuntur doloremque eaque quaerat velit expedita. Voluptatem id temporibus exercitationem error ratione, nihil alias aut illum harum dicta modi reprehenderit excepturi sequi. Natus corrupti eligendi, doloremque molestiae vel, facere hic soluta, vero alias deserunt tenetur quisquam laudantium eos! Dolor nemo sapiente deleniti! Culpa provident quidem rem facere earum hic ab. Quod deleniti qui quos aut animi repellendus commodi iste exercitationem officiis, pariatur harum optio rem accusantium cumque ea omnis sed, voluptatibus saepe doloremque error aliquam ullam quisquam. Earum, dolorum! Velit assumenda, rerum vero, nisi eaque accusantium, voluptas corporis sapiente hic cumque magnam eius quas dignissimos ab tenetur impedit! Ipsa mollitia quibusdam voluptas quisquam nesciunt tempora corrupti, est non qui, et, consequatur saepe? Aliquam corrupti ex natus minima suscipit, dolore voluptatibus pariatur, tempora esse sit cum? Fugit accusantium quae cupiditate odio nostrum assumenda adipisci dolore quod consectetur provident obcaecati corrupti numquam nobis laborum officiis asperiores inventore voluptatum quis beatae, saepe sed similique porro. Placeat sit accusantium obcaecati aliquam necessitatibus eligendi, quod adipisci facere sapiente quaerat reprehenderit fuga nulla. Inventore, hic quam, eos porro vel quisquam, quos aperiam amet est harum obcaecati nobis similique impedit. Praesentium dolorum iste, saepe tempore ullam placeat quo sed totam quidem, dignissimos laudantium aperiam, voluptas unde dolor commodi autem quaerat voluptate. Recusandae eaque officia expedita incidunt praesentium consequuntur distinctio, mollitia vero repellendus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi iure, alias, minima et itaque amet enim harum, ipsa accusamus quae nihil consectetur! Eum tempore distinctio sequi obcaecati quod veritatis iure, deleniti dolores enim eveniet sint provident repudiandae accusamus nulla aliquid. Ut provident temporibus consequuntur tenetur, sequi atque culpa assumenda, excepturi deleniti eligendi sunt mollitia reiciendis ullam dicta laborum quaerat alias, sapiente consequatur veritatis autem praesentium nobis. Sed itaque deserunt, fugiat, aspernatur totam voluptatibus blanditiis distinctio amet adipisci quaerat reiciendis in odio vel eveniet maxime inventore necessitatibus illo aperiam eaque dolor. Rerum est molestias in placeat iusto corporis, distinctio ullam consequatur, non at molestiae tenetur ut eveniet sunt quam! Quo voluptas fugiat, ut quaerat corporis error fugit eaque similique? Dolorem similique quas rem fuga? Ex nemo dolorem fugit quod a animi, tenetur ab similique sunt quaerat quas unde amet minima consequuntur! Sapiente numquam architecto assumenda et corrupti consequatur est quasi dolor animi quos aliquid, odit cum dolores exercitationem fuga amet soluta autem expedita quo atque culpa laudantium? Qui alias assumenda molestias, saepe voluptates recusandae, dolorem facilis quam accusamus harum, nihil dicta aut aliquid magnam pariatur possimus soluta! Totam rem officia magni officiis! A sunt porro est earum enim officia atque distinctio, possimus illum ab nostrum accusamus ad temporibus, eaque sint consequuntur. Quam, sed! Vero qui ducimus distinctio nihil iusto exercitationem a doloremque nesciunt, maxime culpa maiores harum esse doloribus quaerat quidem pariatur cumque, inventore ipsam voluptas quisquam perferendis. Quos aperiam eveniet labore debitis distinctio, accusamus esse exercitationem amet asperiores quae neque reiciendis. Quidem, sed, quae corrupti sit dolor esse dolore veritatis magnam ratione atque soluta maiores qui dicta doloremque laborum inventore architecto, nostrum ipsam pariatur consectetur amet molestiae blanditiis perspiciatis deleniti. Ratione saepe totam quibusdam consequuntur doloremque eaque quaerat velit expedita. Voluptatem id temporibus exercitationem error ratione, nihil alias aut illum harum dicta modi reprehenderit excepturi sequi. Natus corrupti eligendi, doloremque molestiae vel, facere hic soluta, vero alias deserunt tenetur quisquam laudantium eos! Dolor nemo sapiente deleniti! Culpa provident quidem rem facere earum hic ab. Quod deleniti qui quos aut animi repellendus commodi iste exercitationem officiis, pariatur harum optio rem accusantium cumque ea omnis sed, voluptatibus saepe doloremque error aliquam ullam quisquam. Earum, dolorum! Velit assumenda, rerum vero, nisi eaque accusantium, voluptas corporis sapiente hic cumque magnam eius quas dignissimos ab tenetur impedit! Ipsa mollitia quibusdam voluptas quisquam nesciunt tempora corrupti, est non qui, et, consequatur saepe? Aliquam corrupti ex natus minima suscipit, dolore voluptatibus pariatur, tempora esse sit cum? Fugit accusantium quae cupiditate odio nostrum assumenda adipisci dolore quod consectetur provident obcaecati corrupti numquam nobis laborum officiis asperiores inventore voluptatum quis beatae, saepe sed similique porro. Placeat sit accusantium obcaecati aliquam necessitatibus eligendi, quod adipisci facere sapiente quaerat reprehenderit fuga nulla. Inventore, hic quam, eos porro vel quisquam, quos aperiam amet est harum obcaecati nobis similique impedit. Praesentium dolorum iste, saepe tempore ullam placeat quo sed totam quidem, dignissimos laudantium aperiam, voluptas unde dolor commodi autem quaerat voluptate. Recusandae eaque officia expedita incidunt praesentium consequuntur distinctio, mollitia vero repellendus.</p> -->
+
+<!-- <div class="container "> -->
+    
+    
+    <!-- <div class="col-3 m-5 p-5 border border-success ">
+
+    </div> -->
+
+    <!-- height  width -->
+
+    <!--    w-0,25,50,75,100 -->
+
+        <!-- h-0,25,50,75,100 -->
+
+
+        <!-- <div class="container m-5 border p-3" style="height:90vh;"  > -->
+            <!-- <div class="border  border-dark w-25 p-5">25%</div>
+             <div class="border border-dark w-50 p-5">50%</div>
+             <div class="border border-dark w-75 p-5">75%</div>
+             <div class="border border-dark w-100 p-5">100%</div> -->
+
+            <!-- <div class="border border-danger h-100 w-50">100%</div> -->
+             <!-- <div class="border h-50 col-4">50%</div>
+             <div class="border h-75 col-4">75%</div>
+              <div class="border h-100 col-4">100%</div> -->
+        </div>
+
+
+        <!-- form-control -->
+        <!-- form-label -->
+        <!-- is-valid is-invalid -->
+
+
+      <!-- <div class="contianer m-5">
+        <label for="" class="form-label">Name</label>
+          <input type="text" class="form-control is-invalid">
+      </div> -->
+
+
+<!-- 
+      <table class="table table-sm table-info table-striped">
+       <thead>
+         <tr>
+            <th>home</th>
+            <th>home</th>
+            <th>home</th>
+            <th>home</th>
+            <th>home</th>
+        </tr>
+       </thead>
+
+       <tbody>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+        <tr>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+            <td>home</td>
+        </tr>
+       </tbody>
+        
+      </table> -->
+
+
+
+      <!-- <div class="container my-5">
+
+        <div class="row justify-content-around align-items-start border border-danger p-3 " style="height: 500px;">
+            <div class="col-3 border border-dark p-3  h-25">1</div>
+            <div class="col-3 border border-dark p-3  h-25">2</div>
+            <div class="col-3 border border-dark p-3  h-25">3</div>
+        </div>
+
+      </div> -->
+<!-- <div class="container my-5">
+          <div class="d-flex flex-wrap justify-content-evenly align-items-end border border-danger p-3 " style="height: 500px;">
+            <div class="col-3 border border-dark p-3  h-25">1</div>
+            <div class="col-3 border border-dark p-3  h-25">2</div>
+            <div class="col-3 border border-dark p-3  h-25">3</div>
+            <div class="col-3 border border-dark p-3  h-25">1</div>
+            <div class="col-3 border border-dark p-3  h-25">2</div>
+            <div class="col-3 border border-dark p-3  h-25">3</div>
+             <div class="col-3 border border-dark p-3  h-25">3</div>
+        </div>
+      </div> -->
+
+      
+
+
+      <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary">
+  Notifications <span class="badge text-bg-danger">4</span>
+</button>
+
+<!-- <p class="alert alert-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, mollitia!</p> -->
+
+
+
+<div class="card my-5" style="width: 18rem;">
+  <img  src="https://images.pexels.com/photos/26311729/pexels-photo-26311729.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+
+<div class="container my-5">
+    <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img height="350px" src="https://images.pexels.com/photos/26311729/pexels-photo-26311729.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img height="350px" src="https://images.pexels.com/photos/37875596/pexels-photo-37875596.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img height="350px" src="https://images.pexels.com/photos/4915249/pexels-photo-4915249.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<input type="text" disabled>
+
+<input type="range" name="" id="">
+
+ 
+        <script height="350px" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+      Bootstrap 
+
+which is open source front-end css framework it helps to build reponsive and first mobile website applicaiton 
+with the pre-defined css code css classnames , components javascript interactive features 
+
+
+open source 
+
+use , modify , reuse it with some rules and tools 
+
+front-end 
+    html
+    css
+
+    web page - browser - UI 
+
+css framework
+        framework which is a pre-defined code with rules , tool , structure to develop the application fastly and consistently
+    
+
+
+reponsive and first mobile website applicaiton 
+
+from small to big screen u r app will be adapatable
+
+ pre-defined css code 
+
+
+ history of bootstrap
+    
+ bootstrap is also known as twitter blue print
+
+ 2010
+
+ mark otto
+
+ jacob thorton
+
+ bootstrap has limitations 
+    such as limited color,size,fonts
+
+environment setUp
+
+
+1)cdn - links 
+    content delivery network 
+      helps as to run remote server
+2)installing bootstrap with npm
+-->
+
+
+    
